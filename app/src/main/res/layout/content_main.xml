@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="nico.divisorgastos.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <TextView
+        android:id="@+id/total_de_gastos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_de_gastos"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_toRightOf="@id/total_de_gastos"
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/default_total"
+        android:textSize="30sp"
+        android:gravity="end" />
+
+    <TextView
+        android:layout_below="@id/total_de_gastos"
+        android:id="@+id/gastos_por_persona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_de_gastos_per_capita"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_below="@id/total_de_gastos"
+        android:layout_toRightOf="@id/gastos_por_persona"
+        android:id="@+id/totalPerCapita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/default_total"
+        android:textSize="20sp"
+        android:gravity="end" />
+
+    <ExpandableListView
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/gastos_por_persona"
+        android:id="@+id/lvExp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+
+
+</RelativeLayout>

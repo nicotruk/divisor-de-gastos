@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_gravity="center"
+        android:background="#ffffcc"
+        android:paddingTop="20dp"
+        android:paddingEnd="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/name_help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/persona_name"
+            android:inputType="textCapSentences" />
+
+
+        <EditText
+            android:layout_below="@id/name_help"
+            android:layout_alignParentRight="true"
+            android:id="@+id/gasto_monto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/gasto_monto"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:layout_below="@id/name_help"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/gasto_monto"
+            android:id="@+id/gasto_detalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/gasto_detalle"
+            android:inputType="textCapSentences" />
+
+        <Button
+            android:layout_below="@id/gasto_detalle"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agregar_gasto"/>
+
+
+</RelativeLayout>

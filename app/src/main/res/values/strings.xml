@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Divisor de Gastos</string>
+    <string name="add_persona_activity">Agregar Nuevo Gasto</string>
+    <string name="action_settings">Settings</string>
+    <string name="persona_name">¿Quién lo pagó?</string>
+    <string name="gasto_detalle">Detalle</string>
+    <string name="gasto_monto">Monto</string>
+    <string name="agregar_gasto">Agregar</string>
+    <string name="total_de_gastos">Total de Gastos:</string>
+    <string name="default_total">$0</string>
+    <string name="total_de_gastos_per_capita">Gastos por Persona:</string>
+</resources>
